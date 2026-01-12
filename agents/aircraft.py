@@ -28,9 +28,10 @@ class Aircraft(Agent):
         self.arrival_time = arrival_time
         self.turnaround_time = turnaround_time
         self.departure_time = arrival_time + turnaround_time
-        self.assigned_stand_type = None  # Will be 'PLB' or 'REMOTE'
-        self.state = 'scheduled'  # States: scheduled, parked, departed
-    
+        self.assigned_stand_type = None 
+        self.state = 'scheduled' 
+
+
     def step(self):
         """
         Agent step method (required by Mesa).

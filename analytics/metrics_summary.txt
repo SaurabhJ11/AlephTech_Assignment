@@ -1,0 +1,20 @@
+======================================================================
+SIMULATION METRICS SUMMARY
+======================================================================
+
+1. Average PLB Stand Utilization
+   Value: 88.71 %
+   Indicates how effectively scarce PLB resources are used. High utilization (>80%) suggests capacity constraints and potential need for expansion. Low utilization (<60%) may indicate over-capacity or inefficient scheduling patterns.
+
+2. Percentage of Aircraft Assigned PLB
+   Value: 77.13 %
+   Measures quality of service and infrastructure sufficiency. Higher PLB rates (>70%) indicate better passenger experience with jet bridges and shorter walking distances. Lower rates suggest capacity shortfalls requiring remote stands with bus transport.
+
+3. Peak Concurrent Parked Aircraft
+   Value: 53.00 aircraft
+   Identifies maximum congestion levels and peak capacity requirements. This metric is critical for infrastructure planning, staffing decisions, and understanding worst-case operational scenarios during peak periods.
+
+4. Average Ground Time
+   Value: 57.70 minutes
+   Validates realism of simulation against operational assumptions (target: 58 min). Ground time directly affects stand occupancy rates, capacity planning, and overall scheduling efficiency. Variability impacts buffer requirements.
+

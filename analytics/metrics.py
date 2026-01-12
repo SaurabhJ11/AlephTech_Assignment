@@ -48,7 +48,7 @@ class SimulationMetrics:
         Returns:
             Dictionary with metric value and explanation
         """
-        plb_total = 35  # Fixed assumption
+        plb_total = 35
         avg_plb_occupied = self.minute_df['plb_occupied'].mean()
         utilization_pct = (avg_plb_occupied / plb_total) * 100
         
@@ -166,28 +166,24 @@ class SimulationMetrics:
         print("SIMULATION METRICS SUMMARY")
         print("="*70)
         
-        # Metric 1: PLB Utilization
         plb_util = metrics['plb_utilization']
         print(f"\n1️⃣  {plb_util['description']}")
         print(f"   Value: {plb_util['value']:.2f}{plb_util['unit']}")
         print(f"   Average Occupied: {plb_util['avg_occupied']:.1f} / {plb_util['total_stands']} stands")
         print(f"   \n   📊 {plb_util['explanation']}")
         
-        # Metric 2: PLB Assignment Rate
         plb_assign = metrics['plb_assignment_rate']
         print(f"\n2️⃣  {plb_assign['description']}")
         print(f"   Value: {plb_assign['value']:.2f}{plb_assign['unit']}")
         print(f"   PLB: {plb_assign['plb_count']} aircraft | Remote: {plb_assign['remote_count']} aircraft")
         print(f"   \n   📊 {plb_assign['explanation']}")
         
-        # Metric 3: Peak Concurrent Parked
         peak = metrics['peak_parked_aircraft']
         print(f"\n3️⃣  {peak['description']}")
         print(f"   Value: {peak['value']} {peak['unit']}")
         print(f"   Occurred at: {peak['peak_time_hours']:.2f} hours ({peak['peak_time_minutes']} minutes)")
         print(f"   \n   📊 {peak['explanation']}")
         
-        # Metric 4: Average Ground Time
         ground = metrics['average_ground_time']
         print(f"\n4️⃣  {ground['description']}")
         print(f"   Value: {ground['value']:.2f} {ground['unit']}")
