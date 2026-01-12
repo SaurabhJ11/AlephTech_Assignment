@@ -38,6 +38,7 @@ Installation
       pip install mesa pandas numpy
 
 Execution
+
       Run complete simulation pipeline:
       python run_simulation.py
       
