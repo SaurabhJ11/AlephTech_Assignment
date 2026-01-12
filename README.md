@@ -60,7 +60,7 @@ This executes:
 Average turnaround time: 58 minutes  
 Average parked aircraft at steady state: ~40 
 Number of PLB stands: 35 (limited) 
-Average aircraft movements (arrivals + departures): 90 per hour (Link)
+Average aircraft movements (arrivals + departures): 90 per hour
 Remote stands: Unlimited
 Simulation duration: 6 hours (360 minutes)
 Time resolution: 1 minute per simulation step
